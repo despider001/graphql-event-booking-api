@@ -27,8 +27,8 @@ app.all('/graphql', graphqlHTTP({
 
 mongoose.connect(`mongodb+srv://${process.env.mongo_username}:${process.env.mongo_password}@${process.env.mongo_host}/${process.env.mongo_database}?retryWrites=true`, { useNewUrlParser: true }).then(
   () => {
-    const port = process.env.port || 4000;
-    app.listen(port, ()=>{
+    const port = process.env.PORT || 4000;
+    app.listen(port, process.env.IP ,()=>{
       console.log('>> App is Running at localhost:4000/graphql');
     });
   }
