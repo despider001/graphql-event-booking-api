@@ -3,4 +3,4 @@
 
 1.  To serve to project locally, you need to provide a valid `uri` in `app.js` >> `mongoose.connect('valid_uri')`.
 
-2. `clientServer.js` shows some way to call graphQL APIs
+2. `clientServer.js` shows some ways to call graphQL APIs
